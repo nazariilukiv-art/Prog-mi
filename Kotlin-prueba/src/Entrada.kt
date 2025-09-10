@@ -12,4 +12,8 @@ fun main(){
     println("Mi correo es ${correo?.length ?: "sin asignado"}")
     direccion = "Alcorcon"
     println("Mi Direccion es $direccion")
+
+    var suma = 100
+    var a = suma + edad
+    println("La suma es: $suma + $edad = $a")
 }
