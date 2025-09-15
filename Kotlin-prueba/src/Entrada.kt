@@ -13,7 +13,11 @@ fun main(){
     direccion = "Alcorcon"
     println("Mi Direccion es $direccion")
 
-    var suma = 100
-    var a = suma + edad
-    println("La suma es: $suma + $edad = $a")
+    var nombre1 = "Alemania"
+    nombre1 = "Berlin"
+    nombre1 = "1234E"
+    println("$nombre1")
+
+    
+
 }
