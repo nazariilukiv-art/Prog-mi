@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EJERICIOS_SENTENCIAS.iml" filepath="$PROJECT_DIR$/EJERICIOS_SENTENCIAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicios_IF/Ejercicios_IF.iml" filepath="$PROJECT_DIR$/Ejercicios_IF/Ejercicios_IF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicios_switch/Ejercicios_switch.iml" filepath="$PROJECT_DIR$/Ejercicios_switch/Ejercicios_switch.iml" />
     </modules>
   </component>
 </project>

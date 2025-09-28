@@ -1,31 +1,28 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Ej_06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int dia;
-        int mes;
-        int anio;
-        System.out.println("Introduce un dia: ");
+        int dia, mes, anio;
+        boolean valido;
+
+        System.out.println("Introduce Dia");
         dia = sc.nextInt();
-        if (dia > 31 || dia <= 0){
-            System.out.println("Dia Incorecto");
-        };
-
-        System.out.println("Introduce un mes: ");
+        System.out.println("Introduce Mes");
         mes = sc.nextInt();
-        if (mes > 12 || mes <= 0){
-            System.out.println("Mes Incorecto");
-        };
-
-        System.out.println("Introduce un año: ");
+        System.out.println("Introduce Año");
         anio = sc.nextInt();
-        if (anio > 9999 || anio <= 0){
-            System.out.println("Año Incorecto");
-        };
 
-        System.out.println("La fecha introducida es: " + dia + "/" + mes + "/" + anio);
+        valido = mes > 0 && mes < 13 && anio > 0 && anio < 10000 && dia > 0 && dia <= diasMes(mes);
+        System.out.println(valido ? "La fecha es correcta: " + dia + "/" + mes + "/" + anio :
+                "La fecha es incorrecta: " + dia + "/" + mes + "/" + anio);
+    }
 
-
+    public static int diasMes(int m){
+        switch (m){
+            case 2: return 28;
+            case 4: case 6: case 9: case 11: return 30;
+            default: return 31;
+        }
     }
 }
